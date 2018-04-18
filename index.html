@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1>JavaScript Playground!</h1>
+  <pre>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/arrays.js"></script>
+    <script type="text/javascript" src="./js/functions.js"></script>
+  </pre>
+
+  <button onclick="console.clear()">Clear Console</button>
+  <button onclick="closeWindow()">Close window</button>
+  <button onclick="window.location.reload()">Reload window</button>
+
+  <fieldset>
+    <select id="type" name="type">
+      <option></option>
+      <option>Number</option>
+      <option>Text</option>
+      <option>Boolean</option>
+      <option>Object</option>
+      <option>Null</option>
+      <option>Undefined</option>
+    </select>
+    <button type="button" name="submit-btn" value="submit" onclick="submit()">Submit</button>
+    <button type="button" name="clear-btn" value="clear" onclick="clearSubmission()">Clear</button>
+    <h5 id="type-result"></h5>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Demonstrate While Loop</legend>
+    <p>Open console</p>
+    <button onclick="goWhileLoop()">Click me</button>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Demonstrate Do/While Loop</legend>
+    <p>Open console</p>
+    <button onclick="doWhileLoop()">Click me</button>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Demonstrate For Loop w/ Multiple Variables</legend>
+    <p>Open console</p>
+    <button onclick="demonstrateForLoop()">Click me</button>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Demonstrate for/in loop</legend>
+    <p>Open console</p>
+    <div>
+      <pre>let person = {fname: 'colin', lname: 'knebl', arms: 2};</pre>
+      <pre>let mixedArray = [3, 5, 7];</pre>
+      <pre>mixedArray.foo = 'bar';</pre>
+    </div>
+    <button onclick="demo1()">for/in over person:<br>for (let x in person)</button>
+    <button onclick="demo2()">for/in over mixedArray:<br>for (let x in mixedArray)</button>
+    <button onclick="demo3()">for/of over mixedArray:<br>for (let x of mixedArray)</button>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Throw/Error handling</legend>
+    <h4>try/catch/finally</h4>
+    <button onclick="throwString()">Throw a string</button>
+    <button onclick="throwError()">Throw error</button>
+    <button onclick="throwHandledError()">Throw error with exception handling</button>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Debugger</legend>
+    <button onclick="useDebugger()">Debugger</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>Test <i>this</i></legend>
+    <form>
+      <input type="text" name="fName">
+      <input type="button" name="submit" onclick="testThis(this)">
+    </form>
+    <!-- <button onclick="testThis(this)">Test This</button> -->
+  </fieldset>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
