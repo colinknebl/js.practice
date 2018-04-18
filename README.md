@@ -1,0 +1,1 @@
+This repository is meant for practicing JavaScript skillz.
